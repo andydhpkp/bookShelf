@@ -3,19 +3,19 @@ package com.bookshelf.book.domain;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document (collection = "books")
+@Document (collection = "bookShelf")
 public class Book {
 	@Id private String id;
 	
-		private String author;
+		private String authors;
 		private String title;
 		
-	public String getAuthor() {
-		return author;
+	public String getAuthors() {
+		return authors;
 	}
 	
-	public void setAuthor(String author) {
-		this.author = author;
+	public void setAuthors(String authors) {
+		this.authors = authors;
 	}
 	
 	public String getTitle() {

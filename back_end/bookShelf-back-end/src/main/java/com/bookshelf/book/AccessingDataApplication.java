@@ -25,11 +25,11 @@ public class AccessingDataApplication implements CommandLineRunner {
 		
 		try {
 			System.out.println("Find Book by title:");
-			System.out.println(repository.findByTitle("The Way of Kings"));
+			System.out.println(repository.findByTitle("Harry Potter and the Half-Blood Prince (Harry Potter  #6)"));
 			
 			System.out.println("Find by ID:");
-			System.out.println(repository.findById("QVn-CgAAQBAJ"));
-			Optional<Book> bookOpt = repository.findById("QVn-CgAAQBAJ");
+			System.out.println(repository.findById("62001d508df718929b47a403"));
+			Optional<Book> bookOpt = repository.findById("62001d508df718929b47a403");
 			
 			Book book = bookOpt.get();
 			System.out.println(book);
