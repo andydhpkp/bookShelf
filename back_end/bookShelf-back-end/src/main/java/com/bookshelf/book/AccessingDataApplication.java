@@ -28,8 +28,8 @@ public class AccessingDataApplication implements CommandLineRunner {
 			System.out.println(repository.findByTitle("Harry Potter and the Half-Blood Prince (Harry Potter  #6)"));
 			
 			System.out.println("Find by ID:");
-			System.out.println(repository.findById("62001d508df718929b47a403"));
-			Optional<Book> bookOpt = repository.findById("62001d508df718929b47a403");
+			System.out.println(repository.findById("1"));
+			Optional<Book> bookOpt = repository.findById("1");
 			
 			Book book = bookOpt.get();
 			System.out.println(book);
@@ -37,6 +37,7 @@ public class AccessingDataApplication implements CommandLineRunner {
 		} catch (Exception e) {
 			System.out.println("Didn't work");
 			System.out.println(e);
+			System.out.println("getCause = " + e.getCause());
 		}
 	}
 }

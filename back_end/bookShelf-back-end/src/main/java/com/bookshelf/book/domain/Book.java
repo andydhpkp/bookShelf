@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document (collection = "bookShelf")
 public class Book {
-	@Id private String id;
+	@Id private String bookID;
 	
 		private String authors;
 		private String title;
